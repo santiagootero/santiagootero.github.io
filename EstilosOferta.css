@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color:black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+  
+}
+
+header.head {
+  display: flex;
+  width: 100vw;
+  background-color: darkviolet;  
+  height: 120px;
+  align-items: center;
+}
+
+nav{
+    font-size: 1.20em;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li a{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 20px 20px 20px 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 200ms all ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color:darkviolet;
+}
+
+
+
+nav ul{
+    display: flex;
+    
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+div.logo img{
+    width: 350px;
+    height: 100.5px;
+    border-radius: 10px;
+    transition: 200ms all ease-in-out;
+}
+
+div.logo img:hover{
+    border: 2px solid #D27FFF;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+main aside{
+    font-size: 1.20em;
+    display: flex;
+    width: 17%;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid #6738FC;
+    margin-top: 20px;
+}
+
+main ul li{
+    list-style: none;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+
+main ul li a{
+    text-decoration: none;
+    color: #8761FF;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms all ease-in-out;    
+}
+
+main ul li a:hover{
+    background-color: #6738FC;
+    color: white;
+}
+
+main section {
+    display: flex;
+    width: 75%;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* margin-right: auto;
+    margin-left: auto;     */
+}
+
+
+main section article img{
+    width: 200px;
+    height: 200px;    
+    transition: 200ms all ease-in-out;  
+}
+
+
+main section article{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    height: fit-content;
+    transition: 200ms all ease-in-out;
+    max-width: 220px;    
+}
+
+main section main{
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    height: 100%;
+    margin-left: 50px;
+    color: #6738FC;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section article:hover{
+    color: white;
+    background-color: #6738FC;
+    border-radius: 10px;
+}
+
+main section header{
+    margin-bottom: 30px;
+}
+
+section.novedades header{    
+    font-family: 'Solway', serif;
+    font-size: 1.20em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+@media(max-width: 1000px){
+    main section main{
+        width: 500px;
+    }
+}
+
+@media(max-width: 990px){
+    body > main{
+        flex-direction: column;
+    }
+
+    ul.comp li{
+        display: inline;      
+        
+    }
+
+    main aside{
+        display: flex;
+        flex-direction: row;
+        border: 0px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.novedades{
+        display: flex;
+        width: 100%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 880px){
+    
+   
+    body > main{
+        flex-direction: column;
+        
+    }
+
+    header.head li a{
+        padding: 0.5em;
+        
+    }
+
+    nav img{
+        display: none;
+    }
+
+    ul.comp li{
+        display: block;      
+        
+    }
+
+    main aside{
+        display: flex;
+        flex-direction: row;
+        border: 0px;
+        width: 100%;
+    }
+
+    main section article:hover{
+        color: #6738FC;
+        background-color: white;
+    }
+
+    main section article img{
+        width: 200px;
+        height: 200px;    
+        
+    }
+
+    main section article span{
+        font-size: 1em;
+    }
+
+    main section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section main{
+        display: flex;
+        width: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,92 @@
+*{ 
+    display: flex;
+align-content: center;
+align-items: center;
+
+}
+
+
+.container {
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+	
+}
+
+a {
+ background-color: darkviolet;
+
+}
+
+.formtop {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem darkviolet;
+	margin-bottom: 1rem;
+}
+
+.formtop h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 span {
+	color: darkviolet;
+}
+
+.formreg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btnform {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btnsubmit, .btnreset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid darkviolet .2rem;
+}
+
+.btnsubmit, .btnreset {
+	width: 50%;
+	border-bottom: none;
+	background-color: darkviolet;
+	color: white;
+}
+
+.btnreset {
+	background-color: darkviolet;
+}
+
+.btnsubmit:hover {
+	background-color: darkviolet;
+}
+
+.btnreset:hover{
+	background-color: darkviolet;
+}
+input.volver{
+    width: 10%;
+    border-bottom: solid #C8C8C8 .2rem;
+    background-color: darkviolet;
+    color: white;
+    align-items: center;
+
+}
